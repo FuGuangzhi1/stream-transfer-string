@@ -1,0 +1,28 @@
+﻿<button id="send">发送请求</button>
+<div id="text">文字显示（打字机效果）</div>
+
+<script>
+  send.addEventListener('click', async () => {
+    try {
+      const url = "http://localhost:1000/home/GetStream";
+      const resp = await fetch(url);
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let txt = '';
+      while(1){
+        const { done, value } = await reader.read();
+        if (done) {
+          break
+        }
+        const chunk = decoder.decode(value);
+        for (let i = 0; i < chunk.length; i++) {
+          txt += chunk[i];
+          text.innerHTML = txt;
+          await new Promise(resolve => setTimeout(resolve, 50)); 
+        }
+    }
+    } catch (exception) {
+      console.log(exception);
+    }
+  });
+</script>

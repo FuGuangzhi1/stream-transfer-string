@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>bin\Release\net9.0\publish\</_PublishTargetUrl>
+    <History>True|2024-03-22T09:58:03.6508389Z;False|2024-03-22T17:57:40.3974358+08:00;False|2024-03-22T17:57:02.4302773+08:00;False|2024-03-22T17:56:56.4117478+08:00;True|2024-03-22T17:38:14.0554765+08:00;True|2024-03-22T17:26:23.7491292+08:00;True|2024-03-22T16:54:24.3422207+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
